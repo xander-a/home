@@ -1,15 +1,31 @@
-import React from "react";
-import ProgressBar from "react-bootstrap/ProgressBar";
+// import React from "react";
 
-function SkillsBar({ skill, value, isScrolled }) {
+// function SkillsLogo({ skill, image }) {
+//   return (
+//     <div style={{ width: "95%", display: "flex", alignItems: "center", marginBottom: "10px" }}>
+//       <img
+//         src={image}
+//         alt={skill}
+//         style={{ width: "40px", height: "40px", marginRight: "10px" }}
+//       />
+//       <p className="lead mb-1 mt-2">{skill}</p>
+//     </div>
+//   );
+// }
+
+// export default SkillsLogo;
+
+import React from "react";
+import Col from "react-bootstrap/Col";
+
+function SkillsBar({ skill, image, isScrolled }) {
   return (
-    <div style={{ width: "95%" }}>
-      <p className="lead mb-1 mt-2">{skill}</p>
-      <ProgressBar
-        className={!isScrolled ? "progress" : " progress-bar-animation"}
-        now={value}
-      />
-    </div>
+    <Col xs={12} className="skill-item">
+      <div style={{ width: "95%", display: "flex", alignItems: "center", marginBottom: "10px"  }}>
+        {image && <img src={image} alt={skill} style={{width: "100px", height: "60px", marginRight: "10px" }} />}
+        <p className="lead mb-1 mt-2" >{skill}</p>
+      </div>
+    </Col>
   );
 }
 

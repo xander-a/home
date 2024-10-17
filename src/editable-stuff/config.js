@@ -98,16 +98,21 @@ const leadership = {
 // SKILLS SECTION
 const skills = {
   show: true,
-  heading: "Skills",
+  heading: "Skills",  
   hardSkills: [
-    { name: "Python", value: 80 },
-    { name: "Java", value: 80 },
-    { name: "SQL", value: 60 },
-    { name: "Data Structures", value: 75 },
-    { name: "C/C++", value: 65 },
-    { name: "JavaScript", value: 40 },
-    { name: "HTML/CSS", value: 90 },
-    { name: "Rust", value: 60 },
+    { name: "Python", image: require("../skillLogo/python.png")},
+    { name: "Java", image: require("../skillLogo/java.png")},
+    { name: "SQL", image: require("../skillLogo/sqls.png")},
+    { name: "Java Database Connection", image: require("../skillLogo/jdbc.png")},
+    { name: "JavaScript", image: require("../skillLogo/javascript.png")},
+    { name: "HTML/CSS", image: require("../skillLogo/html.png") },
+    { name: "Rust", image: require("../skillLogo/rust.png") },
+    { name: "Java Servlet", image: require("../skillLogo/javaservelet.png") },
+    {name: "Java Spring Boot", image: require("../skillLogo/java-spring.png")},
+    {name: "Postgresql", image: require("../skillLogo/psotgresql.png")},
+    {name: "MySQL", image: require("../skillLogo/mysql.png")},
+    {name: "Docker", image: require("../skillLogo/docker.png")},
+
   ],
   softSkills: [
     { name: "Problem Solving", value: 100 },
