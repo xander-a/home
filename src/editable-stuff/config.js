@@ -63,12 +63,18 @@ const about = {
 //      i.e: reposLength: 0,
 // If you want to display specfic projects, add the repository names,
 //      i.e ["repository-1", "repo-2"]
+
 const repos = {
   show: true,
   heading: "Recent Projects",
   gitHubUsername: "xander-a",
   reposLength: 0,
-  specificRepos: ["E-Commerce-Website", "Database-Project", "Snake-Game", "ZYCUS-OJT"],
+  specificRepos: [
+    "Database-Project",
+    "E-Commerce-Website",
+    "Company-Attendance",
+    "WebApp-Fullstack-Backend",
+    "WebApp-FullStack-Frontend-"],
 };
 
 // Leadership SECTION
